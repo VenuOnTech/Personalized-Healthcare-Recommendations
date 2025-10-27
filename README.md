@@ -77,7 +77,7 @@ To run this application on your own machine, follow these steps:
 
 1.  **Clone the Repository:**
    
-    git clone [https://github.com/your-username/your-project-name.git](https://github.com/VenuOnTech/Personalized-Healthcare-Recommendations.git)
+    git clone [https://github.com/your-username/your-project-name.git](https://github.com/VenuOnTech/Personalized-Healthcare-Recommendations.git)  
     cd Personalized-Healthcare-Recommendations
 
 2.  **Create a Virtual Environment (Recommended):**
