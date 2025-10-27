@@ -25,7 +25,7 @@ st.set_page_config(
 @st.cache_data
 def load_data(uploaded_file):
     """Loads and preprocesses the CSV data."""
-    df = pd.read_csv("datasets/personalised_dataset.csv")
+    df = pd.read_csv(uploaded_file)
     # Basic deduplication
     if 'Patient_ID' in df.columns:
         df = df.drop_duplicates(subset=['Patient_ID'], keep='first')
@@ -234,3 +234,4 @@ else:
             fig = px.box(df, y="Predicted_Insurance_Cost", title="Cost Outlier Boxplot")
 
             st.plotly_chart(fig, use_container_width=True)
+
